@@ -25,11 +25,13 @@ spec:
         ports:
         - containerPort: 8080
         env:
-        - name: DB_HOST
+        - name: DBHOST
           value: "mysql-service.mysql-ns.svc.cluster.local"
-        - name: DB_USER
+        - name: DBUSER
           value: "root"
-        - name: DB_PASSWORD
+        - name: DBPWD
           value: "password123"
         - name: DBPORT
           value: "3306"
+        - name: DATABASE        # Added just in case!
+          value: "employees"

@@ -16,9 +16,12 @@ spec:
         app: mysql
         tier: db
     spec:
+      imagePullSecrets:
+      - name: regcred
       containers:
       - name: mysql
         image: 334566130486.dkr.ecr.us-east-1.amazonaws.com/mysql:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3306
         env:
