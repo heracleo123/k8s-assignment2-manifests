@@ -1,0 +1,11 @@
+# Ignore sensitive files
+*.pem
+*.key
+*.crt
+mykey.pem
+labsuser.pem
+.DS_Store
+*.log
+*.bak
+*~
+*.swp

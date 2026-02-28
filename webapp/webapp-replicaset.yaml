@@ -21,6 +21,7 @@ spec:
       containers:
       - name: webapp
         image: 334566130486.dkr.ecr.us-east-1.amazonaws.com/webapp:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
         env:
@@ -30,3 +31,5 @@ spec:
           value: "root"
         - name: DB_PASSWORD
           value: "password123"
+        - name: DBPORT
+          value: "3306"
