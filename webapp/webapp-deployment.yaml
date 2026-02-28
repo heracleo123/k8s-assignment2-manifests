@@ -20,7 +20,7 @@ spec:
       - name: regcred
       containers:
       - name: webapp
-        image: 334566130486.dkr.ecr.us-east-1.amazonaws.com/webapp:v1
+        image: 334566130486.dkr.ecr.us-east-1.amazonaws.com/webapp:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
