@@ -7,17 +7,22 @@ metadata:
     app: employees
     tier: frontend
 spec:
-  imagePullSecrets:
-  - name: regcred
-  containers:
-  - name: webapp
-    image: 334566130486.dkr.ecr.us-east-1.amazonaws.com/webapp:latest
-    ports:
-    - containerPort: 8080
-    env:
-    - name: DB_HOST
-      value: "mysql-service.mysql-ns.svc.cluster.local"
-    - name: DB_USER
-      value: "root"
-    - name: DB_PASSWORD
-      value: "password123"
+      imagePullSecrets:
+      - name: regcred
+      containers:
+      - name: webapp
+        image: 334566130486.dkr.ecr.us-east-1.amazonaws.com/webapp:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DBHOST
+          value: "mysql-service.mysql-ns.svc.cluster.local"
+        - name: DBUSER
+          value: "root"
+        - name: DBPWD
+          value: "password123"
+        - name: DBPORT
+          value: "3306"
+        - name: DATABASE
+          value: "employees"
