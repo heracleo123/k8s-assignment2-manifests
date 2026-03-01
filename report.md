@@ -3,7 +3,7 @@
 **Program:** Cloud Architecture and Administration, Seneca Polytechnic
 
 ## Project Overview
-This repository contains the Kubernetes manifest files and deployment documentation for the **ElectroTech** e-commerce platform. The project demonstrates the successful deployment of a highly available, multi-tier architecture using a local `kind` Kubernetes cluster, featuring a Python frontend web application and a MySQL backend database.
+This repository contains the Kubernetes manifest files and deployment documentation. The project demonstrates the successful deployment of a highly available, multi-tier architecture using a local `kind` Kubernetes cluster, featuring a Python frontend web application and a MySQL backend database.
 
 ---
 
