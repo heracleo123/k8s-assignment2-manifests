@@ -1,4 +1,8 @@
-Cloud Architecture & Administration: Assignment 2Kubernetes Deployment, Orchestration, and Networking | Seneca Polytechnic🚀 Phase 1: Environment Setup1. Repository ConfigurationApplication Source (Assignment 1):Bashgit remote add origin https://github.com/heracleo123/assignment1-app.git 
+Cloud Architecture & Administration: Assignment 
+
+Kubernetes Deployment, Orchestration, and Networking | Seneca Polytechnic
+
+🚀 Phase 1: Environment Setup1. Repository ConfigurationApplication Source (Assignment 1):Bashgit remote add origin https://github.com/heracleo123/assignment1-app.git 
 git add .
 git commit -m "Prepare for Assignment 2"
 git branch -M main
